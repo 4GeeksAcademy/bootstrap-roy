@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+         crossorigin="anonymous"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+         />
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="bi bi-instagram me-2"></i>
+            <span class="fw-semibold">Instagram</span>
+            </a>
+            <!-- BUTTON 1 START -->
+            <div class="buttons d-flex align-items-center">
+               <button
+                  type="button"
+                  class="btn btn-success me-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >
+               Create a new post
+               </button>
+               <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                  >
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="exampleModalLabel">
+                              New message
+                           </h1>
+                           <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              ></button>
+                        </div>
+                        <div class="modal-body">
+                           <form>
+                              <div class="mb-3">
+                                 <label for="recipient-name" class="col-form-label"
+                                    >Caption:</label
+                                    >
+                                 <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="recipient-name"
+                                    rows="6"
+                                    placeholder="Write a caption..."
+                                    ></textarea>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                              >
+                           Close
+                           </button>
+                           <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- BUTTON 2 START -->
+               <div class="btn-group">
+                  <button
+                     type="button"
+                     class="btn btn-secondary dropdown-toggle"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false"
+                     >
+                  <i class="bi bi-gear-fill"></i>
+                  </button>
+                  <!-- REVISED DROPDOWN MENU -->
+                  <ul class="dropdown-menu dropdown-menu-end">
+                     <li><a class="dropdown-item" href="#">Profile</a></li>
+                     <li><a class="dropdown-item" href="#">Accesibilty</a></li>
+                     <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                     <li>
+                        <a class="dropdown-item" href="rafaelfixed.html">Fixed Link</a>
+                     </li>
+                     <li>
+                        <hr class="dropdown-divider" />
+                     </li>
+                     <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                  </ul>
+                  <!-- END REVISION -->
+               </div>
+               <!-- BUTTON 2 FINISH -->
+            </div>
+         </div>
+      </nav>
+      <!------------------->
+      <!--Picture Section-->
+      <!------------------->
+      <div class="container my-4">
+      <!-- Nav Pills remain the same -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+         <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true">
+            <i class="bi bi-grid-3x3"></i>
+            </button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-feed-tab" data-bs-toggle="pill" data-bs-target="#pills-feed" type="button" role="tab" aria-controls="pills-feed" aria-selected="false">
+            <i class="bi bi-square-fill"></i>
+            </button>
+         </li>
+      </ul>
+      <style>
+         .nav-pills {
+         /* This is the new rule for the UNSELECTED link color */
+         --bs-nav-link-color: var(--bs-secondary);
+         /* This is the new rule for the UNSELECTED link HOVER color */
+         --bs-nav-link-hover-color: var(--bs-dark);
+         /* This is the existing rule for the SELECTED link background */
+         --bs-nav-pills-link-active-bg: var(--bs-secondary);
+         /* This is the existing rule for the SELECTED link text color */
+         --bs-nav-pills-link-active-color: var(--bs-white);
+         }
+      </style>
+      <!-- Tab Content -->
+      <div class="tab-content" id="pills-tabContent">
+      <!-- Grid View remains the same -->
+      <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+         <div class="row g-4">
+            <!-- Grid images -->
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=1" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=2" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=3" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=4" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=5" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=6" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=7" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=8" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="https://picsum.photos/200?random=9" class="card-img-top" alt="Random placeholder image" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Feed View with additional cards -->
+      <div class="tab-pane fade" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+      <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+      <!-- Card 1 -->
+      <div class="card mb-4">
+         <div class="card-header d-flex justify-content-between">
+            <h6 class="my-0">Random Post 1</h6>
+            <p class="my-0 text-muted">10/27</p>
+         </div>
+         <img src="https://picsum.photos/400?random=10" class="card-img-top" alt="Random placeholder image" />
+         <div class="card-body">
+            <p><strong>1,284 likes</strong></p>
+            <p class="card-text">
+               A random description for a random photo!
+            </p>
+         </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card mb-4">
+         <div class="card-header d-flex justify-content-between">
+            <h6 class="my-0">Random Post 1</h6>
+            <p class="my-0 text-muted">10/27</p>
+         </div>
+         <img src="https://picsum.photos/400?random=11" class="card-img-top" alt="Random placeholder image" />
+         <div class="card-body">
+            <p><strong>1,284 likes</strong></p>
+            <p class="card-text">
+               A random description for a random photo!
+            </p>
+         </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card mb-4">
+         <div class="card-header d-flex justify-content-between">
+            <h6 class="my-0">Random Post 1</h6>
+            <p class="my-0 text-muted">10/27</p>
+         </div>
+         <img src="https://picsum.photos/400?random=12" class="card-img-top" alt="Random placeholder image" />
+         <div class="card-body">
+            <p><strong>1,284 likes</strong></p>
+            <p class="card-text">
+               A random description for a random photo!
+            </p>
+         </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card mb-4">
+         <div class="card-header d-flex justify-content-between">
+            <h6 class="my-0">Random Post 1</h6>
+            <p class="my-0 text-muted">10/27</p>
+         </div>
+         <img src="https://picsum.photos/400?random=13" class="card-img-top" alt="Random placeholder image" />
+         <div class="card-body">
+            <p><strong>1,284 likes</strong></p>
+            <p class="card-text">
+               A random description for a random photo!
+            </p>
+         </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card mb-4">
+         <div class="card-header d-flex justify-content-between">
+            <h6 class="my-0">Random Post 1</h6>
+            <p class="my-0 text-muted">10/27</p>
+         </div>
+         <img src="https://picsum.photos/400?random=10" class="card-img-top" alt="Random placeholder image" />
+         <div class="card-body">
+            <p><strong>1,284 likes</strong></p>
+            <p class="card-text">
+               A random description for a random photo!
+            </p>
+         </div>
+      </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+         crossorigin="anonymous"
+         ></script>
+   </body>
+</html>
